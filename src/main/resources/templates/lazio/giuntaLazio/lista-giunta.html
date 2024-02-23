@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>POLITICANDO</title>
+</head>
+<body style="background-color: darkcyan;">
+	
+	<h1 style="color: gold;">ELENCO MEMBRI GIUNTA REGIONA LAZIO</h1>
+	<div class="alert alert-primary" role="alert" th:if="${listaGiunta.size()==0}"> <h3 >Nessun prodotto trovato</h3></div>
+	
+	<table class="table" th:if="${listaGiunta.size()>0}">
+		
+		
+		<thead style="color: gold;">
+			<tr>
+			<th scope="row"> Nome </th>
+			<th> Cognome </th>
+			<th> Assessorato </th>
+			<th> Presidente </th>
+			<th> Partito </th>
+			<th> Inizio Legislatura </th>
+			<th> Generalità </th>
+			<th> Id </th>
+			</tr>
+		</thead>		
+	<tbody>
+		
+		<tr th:each="g: ${listaGiunta}" style="color: black;">			
+			<td th:text="${g.nome}"></td>
+			<td th:text="${g.cognome}"></td>
+			<td th:text="${g.assessorato}"></td>
+			<td th:text="${g.presidente}"></td>
+			<td th:text="${g.partito}"></td>
+			<td th:text="${g.inizioLegislatura}"></td>
+			<td th:text="${g.generalita}"></td>
+			<td th:text="${g.id}"></td>			
+		</tr>		
+	</tbody>
+		
+		
+	</table>
+
+</body>
+</html>
