@@ -22,10 +22,40 @@ GiunteRepository lazioRepository;
 public String home() {
 	return "home/home";
 		}
+@GetMapping("/info")
+public String info() {
+	return "info/info";
+		}
+
 @GetMapping("/home-lazio")
 public String homeLazio() {
 	return "/lazio/home-lazio";
 } 
+
+@GetMapping("/provincia-viterbo")
+public String Viterbo() {
+	return "/lazio/viterbo/home-viterbo";
+}
+
+@GetMapping("/provincia-rieti")
+public String Rieti() {
+	return "/lazio/rieti/home-rieti";
+}
+
+@GetMapping("/provincia-roma")
+public String Roma() {
+	return "/lazio/roma/home-roma";
+}
+
+@GetMapping("/provincia-latina")
+public String Latina() {
+	return "/lazio/latina/home-latina";
+}
+
+@GetMapping("/provincia-frosinone")
+public String Frosinone() {
+	return "/lazio/frosinone/home-frosinone";
+}
 
 @GetMapping("/giunta-lista-lazio")
 public String listaGiunta(Model model) {
@@ -35,7 +65,10 @@ public String listaGiunta(Model model) {
 	model.addAttribute("listaGiunta", listaGiunta);
 	
 	return "lazio/giuntaLazio/lista-giunta";
-			}
+	
+
+
+}
 
 
 

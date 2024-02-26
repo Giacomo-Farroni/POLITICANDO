@@ -13,79 +13,121 @@
             $("#menu").slideToggle();
           }); 
         });
-</script>
+	</script>
+<script src="https://kit.fontawesome.com/e40abe95f0.js" crossorigin="anonymous"></script>
 </head>
 
 	
 	<style> 
+		
 	.colorTextGold {
 		color:gold;
 	}
 	.pulsanteGiunte{
 		border-radius: 100px;
 		border: solid;
-		
+	}
+	.font{
+		font-family: Times New Roman;;
+	}
+	.skill {
+		display:inline-block;
+		margin:2%
 	}
 		
 	</style>
 	
 	
-<body style="background-color: darkcyan;">
 	
+	<!-- BODY -->
 	
-
-	
-	
-	<div >
-	<div > <h1 class="colorTextGold"  style="margin-left: 420px; font-size: 100px;" >	POLITICANDO	</h1class="colorTextBlack"></div>
-	
-	<div style="border-radius: 100%; border-color: black;">
-		 <h2 class="colorTextGold"  style="margin-left: 460px;">Scegli una fra le regioni qui sotto proposte</h2>
-		 <h3 class="colorTextGold"  style="margin-left: 460px;">Scova le informazioni a te necessarie sui politici italiani </h3>
-	</div>
-   
-	
-	
-</div>
-		<br><br><br> 
-	<div style="margin-left: 30%;">	
-	<img src="https://th.bing.com/th/id/R.d44dc981975117a46d97743d391962cc?rik=WOXl%2bVuo6jR2OA&riu=http%3a%2f%2fmapsof.net%2fuploads%2fstatic-maps%2fitalia_regioni_color.png&ehk=nB1VzJ%2fLXOvXjZEwh%2fbphrygx%2bv7IJRzNQTWQxa0oNc%3d&risl=&pid=ImgRaw&r=0" 
-		usemap="#image_map"
-		style="border-radius: 25%; border:solid">
-<map name="image_map">
-  <area alt="Regione Lazio" title="Regione Lazio" href="http://localhost:8080/Politicando/home-lazio" coords="489,660,82" shape="circle">
-</map>
-<
-</div>
-<!--
-<table>
-  <tr>	
-   <th>  
-	<ol>
-		<li style="color: white; width: 10%;">
-			<a th:href="@{/GiuntaLazio/lista}" style="margin-left: 100px; " class="pulsanteGiunte">
+		<body style="background-color: darkcyan;">
+			
+			
+		
 				
-				<button style="background-color: lightgreen; color: black;" id="menuButton"> 						
-									REGIONE LAZIO
-				</button>
-			</a>
-		</li>
-	</ol> 
-   </th>
-    
-  </tr> 
- --> 
- 
-</table>
-	<button id="menuButton">Menu</button>
-<div id="menu" style="display:none;">
-	
-  <p>Home</p>
-  <p>Dove siamo</p>
-  <p>Chi siamo</p>
-  <p>Contatti</p>
-  <p>Social</p>
-  
+			 <h1 class="colorTextGold" style="margin-left: 5%; font-size: 100px; font-family: Timew New Roman;">POLITICANDO</h1class="colorTextBlack"></h1>
+			
+<div>
+	<diV class="container">	
+		<div>
+			
+			<div class="skill" style="float:left">
+				
+				<button id="menuButton" style="background-color: gold; border-radius: 10%; border:solid; " ><i class="fa-solid fa-bars" > MENU </i></button>
+					
+					<div id="menu" style="display:none; ">
+							<br>
+					   <a href="http://localhost:8080/Politicando/home-lazio">  <p style="color: black;"> <b>Regione Lazio</b> </p> </a>
+					   		
+					   <a  href="http://localhost:8080/Politicando/info" style="color: black;"> <b>info</b> </a>
+		
+						 
+					</div>
+			</div>	
+					
+			
+				
+				
+				
+			<div style="margin-left: 15%; float:left" class="skill">
+			
+					<img src="https://th.bing.com/th/id/OIP.QvhN7SsAqDolPSyMYkmFKAHaIY?pid=ImgDet&w=181&h=204&c=7&dpr=1,4" 
+					     usemap="#image_map"
+						 style="border:solid; border-radius:5%;">
+					<map name="image_map">
+		  				<area alt="Lazio" title="Lazio" href="http://localhost:8080/Politicando/home-lazio" coords="202,248 258,301 285,292 289,285 254,265 259,253 259,238 236,245 211,229 " shape="polygon">
+					</map>
+				
+			</div>
+			
+		</div>	
+	</div>
 </div>
-</body>
-</html>
+			<!--<div style="border-radius: 100%; border-color: black;">
+				  <h2 class="colorTextGold"  style="margin-left: 90px;">Scegli una fra le regioni qui sotto proposte</h2>
+				 <h3 class="colorTextGold"  style="margin-left: 180px;">Scova le informazioni a te necessarie sui politici italiani </h3> 
+				 style=" float:left;"
+			</div>-->
+		   
+		
+				
+				<br> 
+			
+		
+		
+		
+		
+		
+		<!--
+		<table>
+		  <tr>	
+		   <th>  
+			<ol>
+				<li style="color: white; width: 10%;">
+					<a th:href="@{/GiuntaLazio/lista}" style="margin-left: 100px; " class="pulsanteGiunte">
+						
+						<button style="background-color: lightgreen; color: black;" id="menuButton"> 						
+											REGIONE LAZIO
+						</button>
+					</a>
+				</li>
+			</ol> 
+		   </th>
+		    
+		  </tr> 
+		 --> 
+		 
+		<!-- </table>
+			<button id="menuButton">Menu</button>
+		<div id="menu" style="display:none;">
+			
+		  <p>Home</p>
+		  <p>Dove siamo</p>
+		  <p>Chi siamo</p>
+		  <p>Contatti</p>
+		  <p>Social</p>
+		  
+		</div> -->
+		</body>
+		</html>
